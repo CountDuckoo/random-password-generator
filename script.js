@@ -49,16 +49,16 @@ function generatePassword(){
   while (inCharNumberLoop){
     // Prompts the user for a password length with a text input field. If its not a number or can't be converted to one,
     // passwordLength will be set to NaN, and fail the next test
-    passwordLength = Number(window.prompt("How many characters in the password? (at least 8, and no more than 128)"));
-    // Checks if the passwordLength is an integer, and alerts the user if not, restarting this process
-    if (!Number.isInteger(passwordLength)){
-      window.alert("Please enter an integer.");
+    passwordLength = parseInt(window.prompt("How many characters in the password? (at least 8, and no more than 128)"));
+    // Checks if the passwordLength is a number, and alerts the user if not, restarting this process
+    if (!passwordLength){
+      window.alert("Please enter a number.");
     } else {
       // Checks if the passwordLength is in the specific range, and alerts the user if not, restarting this process
       if ((passwordLength < 8) || (passwordLength > 128)){
         window.alert("Please enter a number between 8 and 128, inclusive.");
       } else {
-        // Allows the loop to be escaped if the passwordLength is an integer between 8 and 128, inclusive
+        // Allows the loop to be escaped if the passwordLength is a number between 8 and 128, inclusive
         inCharNumberLoop = false;
       }
     }
