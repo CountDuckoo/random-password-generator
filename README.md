@@ -14,9 +14,9 @@ Open the website in GitHub Pages using this link: https://countduckoo.github.io/
 
 Click the Generate Password Button, and answer the prompts for whether to include the different types of characters in your generated password, followed by the number of characters in your password. If you do not select any types of characters, or enter a password length that is not a number or is not between 8 and 128, inclusive, you will be prompted to repeat that selection step. The password will always include at least one of each type of character selected.
 
-![Upper Website Screenshot](images/PasswordWebsite1.PNG)
+![Upper Website Screenshot](images/PasswordWebsite1.png)
 
-![Lower Website Screenshot](images/PasswordWebsite2.PNG)
+![Lower Website Screenshot](images/PasswordWebsite2.png)
 
 ## Credits
 
